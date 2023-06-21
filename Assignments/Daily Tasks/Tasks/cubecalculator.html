@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 45%;
+            margin: 100px auto;
+            border: 1px solid rgb(185, 8, 8);
+            border-radius: 10px;
+            padding: 20px;
+        }
+        input{
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            font-size: 15px;
+        }
+        button{
+            background-color: rgb(226, 43, 165);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cube calculator -->
+
+    <div class="container">
+        <h1>Mathematical Operations</h1>
+        <input type="text" placeholder="Enter the Number" id="inputText1"><br><br>
+
+        <input type="text" placeholder="Enter the Number" id="inputText2"><br><br>
+
+        <select id="operands">
+            <option type="+">+</option>
+            <option type="-">-</option>
+            <option type="*">*</option>
+            <option type="/">/</option>
+        </select> 
+        <button onclick="calculation()">Calculate</button><br><br>
+        <input type="text" placeholder="Result" id="result">
+        <br><br><br>
+        
+    </div>
+
+    
+    <div class="container">
+        <h1>Cube Calculator</h1>
+        <input type="text" placeholder="Enter the Number" id="numinput"><br><br>
+        <button onclick="cubecal()">Calculate</button><br><br>
+        <input type="text" placeholder="Cube Result" id="numoutput">
+    </div>
+
+    <script src="cubecalculator.js"></script>
+</body>
+</html>
