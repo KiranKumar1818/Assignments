@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SignIn Form</title>
+  <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+ 
+  <div class="container">
+    <h1>SignIn</h1>
+    <form onsubmit="return validateForm()">
+
+      <input type="text" id="username" placeholder="Username" name="username"><br>
+      <span id="usernameError" class="error"></span><br>
+  
+      <input type="text" id="email" placeholder="Email" name="email"><br>
+      <span id="emailError" class="error"></span><br>
+  
+      <input type="password" id="password" placeholder="Password" name="password"><br>
+      <span id="passwordError" class="error"></span><br>
+  
+      <input type="text" id="telephone" placeholder="Telephone" name="telephone"><br>
+      <span id="telephoneError" class="error"></span><br>
+
+     <button type="submit">SignIn</button>
+    </form>
+  </div>
+</body>
+<script src="./login.js"></script>
+</html>
