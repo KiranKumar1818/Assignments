@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Form</title>
+ <link rel="stylesheet" href="./form.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Login Form</h2>
+        <hr style="border: 1px solid rgb(0, 0, 0);"> <br><br>
+        <form onsubmit="validateForm(event)" action="http://www.achieversit.com/">
+          <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" oninput="validateUsername()" />
+            <span id="usernameError"></span>
+          </div>
+          <br>
+          <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" oninput="validatePassword()" />
+            <span id="passwordError"></span>
+          </div>
+          <br>
+          <button type="submit">Submit</button>
+        </form>
+    </div>
+  
+  <script src="./form.js"></script>
+</body>
+</html>
